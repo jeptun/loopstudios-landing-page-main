@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="theme-color" content="#000">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/478f25d40c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/style.css">
+  <title>👄Frontend Mentor👄| Loopstudios landing page</title>
+
+</head>
+
+<body>
+  <section class="hero container padding-block-900 padding-lr-400">
+    <div class="hero-title ">
+      <h1> Immersive experiences that deliver</h1>
+    </div>
+  </section>
+  <div class="container padding-block-600">
+    <header class="primary-header container padding-block-600 padding-lr-400">
+      <div class="primary-navigation">
+        <a href="#"><img src="./images/logo.svg" alt="logo" class="primary-logo">
+        </a>
+        <div class="primary-navigation-wrapper">
+          <a class="primary-links" href="#">About</a>
+          <a class="primary-links" href="#">Services</a>
+          <a class="primary-links" href="#">Clients</a>
+          <a class="primary-links" href="#">Contact</a>
+        </div>
+        <nav class="sidenav padding-block-600">
+          <a href="#" class="nav-links-logo"><img src="./images/logo.svg" alt="logo"
+              class="primary-navigation-logo"></a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+          <a class="nav-links" href="#">About</a>
+          <a class="nav-links" href="#">Services</a>
+          <a class="nav-links" href="#">Clients</a>
+          <a class="nav-links" href="#">Contact</a>
+        </nav>
+        <span class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+      </div>
+    </header>
+  </div>
+  <main class="container">
+    <article class="container">
+      <section class="testimonials-grid padding-block-900 padding-lr-400">
+        <picture class="testimonials-picture">
+          <source media="(min-width:770px )" srcset="./images/desktop/image-interactive.jpg">
+          <img src="./images/mobile/image-interactive.jpg" alt=" interactive">
+        </picture>
+        <div class="testimonials-text flow">
+          <h3 class="testimonials-title">The leader in interactive VR</h3>
+          <div class="testimonials-description">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.
+          </div>
+        </div>
+      </section>
+    </article>
+    <article class="container grid-card padding-block-900 padding-lr-400">
+      <h2 class="creation ">Our creations</h2>
+      <div class="btn-grid">
+        <button class="btn">See all</button>
+      </div>
+      <section class="flex flex-dir-col padding-block-900  gap-2">
+        <div class="grid-columns gap-2">
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-deep-earth.jpg">
+            <img src="./images/mobile/image-deep-earth.jpg" alt="deep-earth">
+            <figcaption>
+              <h4 class="card-title">Deep</h4>
+              <h4 class="card-title">earth</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-night-arcade.jpg">
+            <img src="./images/mobile/image-night-arcade.jpg" alt="night-arcade">
+            <figcaption>
+              <h4 class="card-title">Night</h4>
+              <h4 class="card-title">arcade</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-soccer-team.jpg">
+            <img src="./images/mobile/image-soccer-team.jpg" alt="soccer-team">
+            <figcaption>
+              <h4 class="card-title">Soccer</h4>
+              <h4 class="card-title">team VR</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-grid.jpg">
+            <img src="./images/mobile/image-grid.jpg" alt="The grid">
+            <figcaption>
+              <h4 class="card-title">The</h4>
+              <h4 class="card-title">grid</h4>
+            </figcaption>
+          </picture>
+        </div>
+        <div class="grid-columns gap-2">
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-from-above.jpg">
+            <img src="./images/mobile/image-from-above.jpg" alt="from-above">
+            <figcaption>
+              <h4 class="card-title">From up</h4>
+              <h4 class="card-title">above VR</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-pocket-borealis.jpg">
+            <img src="./images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis">
+            <figcaption>
+              <h4 class="card-title">Pocket</h4>
+              <h4 class="card-title">borealis</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-curiosity.jpg">
+            <img src="./images/mobile/image-curiosity.jpg" alt="curiosity">
+            <figcaption>
+              <h4 class="card-title">The</h4>
+              <h4 class="card-title">curiosity</h4>
+            </figcaption>
+          </picture>
+          <picture class="card-picture">
+            <source media="(min-width:770px )" srcset="./images/desktop/image-fisheye.jpg">
+            <img src="./images/mobile/image-fisheye.jpg" alt="fisheye">
+            <figcaption>
+              <h4 class="card-title">Make it</h4>
+              <h4 class="card-title">fisheye</h4>
+            </figcaption>
+          </picture>
+
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="bg-black padding-block-700 padding-lr-400">
+    <section class="container footer-wrapper">
+      <div class="footer-box">
+        <figure class="footer-figure padding-block-600">
+          <img src="./images/logo.svg" alt=" Loopstudios logo" class="footer-logo">
+        </figure>
+        <div class="footer-links flow-footer">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div class="logos padding-block-600">
+          <a href="#" class="logos-links "><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" class="logos-links "><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="logos-links "><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" class="logos-links "><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="clr-white footer-brand-text">© 2022 Loopstudios. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+  <script src="./dist/script.js"></script>
+</body>
+
+</html>

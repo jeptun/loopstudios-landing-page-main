@@ -1,0 +1,96 @@
+@use "../globals/" as g;
+@use "../util/" as u;
+@use "../mixin/" as m;
+
+footer {
+  display: flex;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  @include u.breakpoint-up(small) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include u.breakpoint-up(small) {
+    align-items: flex-start;
+    display: flex;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  @include u.breakpoint-up(small) {
+    display: flex;
+    flex-direction: row;
+    gap: u.rem(24);
+  }
+}
+.logos a,
+.footer-links a {
+  color: hsl(var(--white));
+  text-decoration: none;
+}
+.logos-links {
+  line-height: 0;
+  font-size: u.rem(30);
+}
+a.logos-links {
+  position: relative;
+  text-transform: uppercase;
+  --link-width: 100%;
+  width: var(--link-width);
+  &:hover,
+  &:focus {
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 100vmax;
+      top: 125%;
+      left: 13%;
+      width: calc(var(--link-width) - 30%);
+      height: u.rem(2);
+      background-color: hsl(var(--white));
+    }
+  }
+}
+.footer-links a {
+  position: relative;
+  text-transform: uppercase;
+ 
+  text-align: center;
+  &:hover,
+  &:focus {
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 100vmax;
+      top: 125%;
+      left: 25%;
+      width:  50%;
+      height: u.rem(2);
+      background-color: hsl(var(--white));
+    }
+  }
+}
+:where(.flow-footer :not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+  @include u.breakpoint-up(small) {
+    margin-top: 0;
+  }
+}
+.logos {
+  display: flex;
+  gap: u.rem(24);
+}
+.footer-figure {
+  width: 200px;
+}

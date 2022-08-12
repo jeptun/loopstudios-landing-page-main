@@ -1,0 +1,40 @@
+@use "../globals/" as g;
+@use "../util/" as u;
+@use "../mixin/" as m;
+
+.testimonials-grid {
+  text-align: center;
+  @include u.breakpoint-up(small) {
+    display: grid;
+    text-align:left;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.testimonials-picture {
+  grid-column: 1/5;
+  grid-row: 1/4;
+}
+.testimonials-text {
+  background-color: hsl(var(--white));
+  grid-column: 4/7;
+  grid-row: 2/4;
+  padding: 0;
+  margin-top: u.rem(50);
+  @include u.breakpoint-up(small) {
+    margin-top: 0;
+    padding-top: u.rem(80);
+    padding-left: u.rem(80);
+  }
+}
+
+.testimonials-title {
+  font-size: clamp(u.rem(36), u.rem(16) + 2vw, u.rem(52));
+  font-family: g.$ff-josefin;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  line-height: 1.1;
+}
+.testimonials-description {
+  color: hsl(var(--dark-gray));
+}
