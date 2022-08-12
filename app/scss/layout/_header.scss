@@ -4,10 +4,13 @@
 
 header.primary-header {
   height: auto;
-  position:fixed;
+  position: fixed;
   top: 0;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1;
+}
+.nav-active {
+  transition: 0.3s ease-in-out;
+  background-color: black;
 }
 .primary-navigation {
   display: flex;
@@ -113,12 +116,6 @@ a.nav-links-logo {
   display: flex;
   max-width: 200px;
 }
-img.primary-navigation-logo {
-  @include u.breakpoint-up(small) {
-    display: none;
-  }
-}
-
 a.closebtn {
   display: block;
   position: absolute;

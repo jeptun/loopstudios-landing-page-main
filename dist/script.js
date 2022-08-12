@@ -1,2 +1,2 @@
-function openNav(){document.querySelector(".sidenav").style.width="100%"}function closeNav(){document.querySelector(".sidenav").style.width="0"}const testString="Javascript test!";console.log(testString);const fruits=["😀","✨","💀"];fruits.map((t=>{console.log(t)}));
+const testString="Javascript test!";console.log(testString);const fruits=["😀","✨","💀"];function openNav(){document.querySelector(".sidenav").style.width="100%"}function closeNav(){document.querySelector(".sidenav").style.width="0"}fruits.map((t=>{console.log(t)}));const navbar=document.querySelector(".primary-header");window.onscroll=()=>{window.scrollY>100?navbar.classList.add("nav-active"):navbar.classList.remove("nav-active")};
 //# sourceMappingURL=script.js.map
